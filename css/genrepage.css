@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.genres {
+    width: 100%;
+    min-height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.genre-picker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.genre-image {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0.5px 0.5px 5px white;
+    /* box-shadow: 0px 0px 3px 7px rgba(0, 0, 0, 0.1); */
+    box-shadow: 3px 3px 5px rgb(17, 17, 17);
+}
+
+.genre-image:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.genre-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#action {
+    background-image: url('../img/genrepage/action.png');
+}
+
+#comedy {
+    background-image: url('../img/genrepage/comedy.png');
+}
+
+#drama {
+    background-image: url('../img/genrepage/drama.png');
+}
+
+#fantasy {
+    background-image: url('../img/genrepage/fantasy.png');
+}
+
+#horror {
+    background-image: url('../img/genrepage/horror.png');
+}
+
+#mystery {
+    background-image: url('../img/genrepage/mystery.png');
+}
+
+#romance {
+    background-image: url('../img/genrepage/romance.png');
+}
+
+#scifi {
+    background-image: url('../img/genrepage/scifi.png');
+}
+
+/* .genre:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+} */
+
+@media (max-width:514px) {
+    .genre-picker {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .genres {
+        margin-top: 5rem;
+    }
+
+    .container {
+        width: 90% !important;
+    }
+}
+
+@media (max-width:408px) {
+    .genres {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width:370px) {
+    .genre-picker {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .genres {
+        margin-top: 8rem;
+    }
+}

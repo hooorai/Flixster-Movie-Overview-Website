@@ -1,0 +1,107 @@
+
+
+.heading1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--container-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    margin-bottom: 2rem;
+    top: 100px;
+}
+
+.heading-title1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* SIZING NG IMAGES */
+#action {
+    width: 200px;
+    height: 480px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#comedy {
+    width: 200px;
+    height: 450px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#horror {
+    width: 250px;
+    height: 500px;
+}
+
+#thriller {
+    width: 200px;
+    height: 450px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#sci-fi {
+    width: 200px;
+    height: 480px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+/* Container for genres */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 130px;
+}
+
+/* Genre styles */
+.genre {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffb43a;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Background images per Genre*/
+#action {
+    background-image: url("../img/genrepage/action.jpg");
+}
+
+#comedy {
+    background-image: url("../img/genrepage/comedy.jpg");
+}
+
+#horror {
+    background-image: url("../img/genrepage/horror.jpg");
+}
+
+#thriller {
+    background-image: url("../img/genrepage/thriller.jpg");
+}
+
+#romance {
+    background-image: url("../img/genrepage/romance.jpg");
+}
+
+#sci-fi {
+    background-image: url("../img/genrepage/sci-fi.jpg");
+}
+
+.genre:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+}

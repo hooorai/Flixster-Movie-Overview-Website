@@ -1,0 +1,17 @@
+.home-section {
+    pad: 1rem 0 2rem !important;
+}
+
+.home {
+    margin-top: 1rem !important;
+}
+
+.home-slider {
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem !important;
+    border-radius: 0.5rem;
+    text-shadow: 0.5px 0.5px 5px rgb(0, 0, 0);
+}
